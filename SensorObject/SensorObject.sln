@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorObject", "SensorObject\SensorObject.vcxproj", "{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorObjectTester", "SensorObjectTester\SensorObjectTester.vcxproj", "{A7BF7260-F4D4-47AC-AB69-BBE638A06939}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD} = {5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Debug|x64.ActiveCfg = Debug|x64
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Debug|x64.Build.0 = Debug|x64
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Debug|x86.Build.0 = Debug|Win32
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Release|x64.ActiveCfg = Release|x64
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Release|x64.Build.0 = Release|x64
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Release|x86.ActiveCfg = Release|Win32
+		{5E133B80-342E-42CA-84C4-6C6ADDA7C2FD}.Release|x86.Build.0 = Release|Win32
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Debug|x64.ActiveCfg = Debug|x64
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Debug|x64.Build.0 = Debug|x64
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Debug|x86.Build.0 = Debug|Win32
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Release|x64.ActiveCfg = Release|x64
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Release|x64.Build.0 = Release|x64
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Release|x86.ActiveCfg = Release|Win32
+		{A7BF7260-F4D4-47AC-AB69-BBE638A06939}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

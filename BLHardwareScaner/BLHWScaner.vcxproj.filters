@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{e7645185-a8f5-48b6-b86d-42a30774510f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Wmi">
+      <UniqueIdentifier>{3552ea21-5cf1-44c8-bf3b-5fdfecbb3844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\SetupApi">
+      <UniqueIdentifier>{fe006d18-dd04-410c-a8d4-8def10243f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\WifiNetwork">
+      <UniqueIdentifier>{e15020f5-8730-4a0e-9b01-d02c1587c51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\DiskController">
+      <UniqueIdentifier>{78eaff19-833a-4ffd-a322-da54c7fb75b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\SMARTParser">
+      <UniqueIdentifier>{2c6a6440-c714-467f-9979-740a76a2d43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Log">
+      <UniqueIdentifier>{22d7634c-09e4-4114-8aec-63728a622413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Memory">
+      <UniqueIdentifier>{508a3cab-a4f8-4e52-bc40-9c18e97f8d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui\TestItem">
+      <UniqueIdentifier>{312310ff-3bb6-4adb-baf5-b6eda618c29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\SMBiosParser">
+      <UniqueIdentifier>{459d2a58-b494-4093-bf73-c15b2afe357a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Webcam">
+      <UniqueIdentifier>{5b6815c8-020d-4768-8c8c-e790ce6db9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Update">
+      <UniqueIdentifier>{20d9ae9b-046e-40d9-98e6-bb3043a5bc53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Pdh">
+      <UniqueIdentifier>{5387770d-f4b1-4eec-86b2-3edc7e2cd024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{6313920c-cbb0-426c-bdda-d47f95388dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\TaskScheduler">
+      <UniqueIdentifier>{84d70c82-a4ba-46e8-a605-7048e67f38ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\SystemMetrics">
+      <UniqueIdentifier>{0ee9cb7f-13b6-4184-ab64-7af76d2ce14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Win8API">
+      <UniqueIdentifier>{1b6cf6ab-73cb-4a42-886e-6bcf745bcdac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\moc_HardwareInforPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\HardwareInforPage.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Wmi\LWMISystemClasses.cpp">
+      <Filter>Src\Wmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Wmi\LWMIHardwareClasses.cpp">
+      <Filter>Src\Wmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Wmi\LWMICoreManager.cpp">
+      <Filter>Src\Wmi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SetupApi\LSetupAPI.cpp">
+      <Filter>Src\SetupApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\WifiNetwork\LWifiNetwork.cpp">
+      <Filter>Src\WifiNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\DiskController\LDiskController.cpp">
+      <Filter>Src\DiskController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SMARTPaser\LSMARTParser.cpp">
+      <Filter>Src\SMARTParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\TempManagementPage.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_TempManagementPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\TemperatureProbe.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Log\LLog.cpp">
+      <Filter>Src\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Memory\LMemory.cpp">
+      <Filter>Src\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_TestItemPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\TestItemPage.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\MainPage.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_MainPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_DiskSpeedPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\TestItem\DiskSpeedPage.cpp">
+      <Filter>Ui\TestItem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\LDiskSpeed.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\PerformanceCounter.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\LSensorObject.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\LHardwareInfor.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\LCpuStress.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SMBiosPaser\LSMBiosPaser.cpp">
+      <Filter>Src\SMBiosParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Webcam\LWebcam.cpp">
+      <Filter>Src\Webcam</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_CameraViewPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\TestItem\CameraViewPage.cpp">
+      <Filter>Ui\TestItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Update\FtpDownload.cpp">
+      <Filter>Update</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_FtpDownload.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Update\NewVersionUpdate.cpp">
+      <Filter>Update</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Pdh\LPdh.cpp">
+      <Filter>Src\Pdh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\LAppInstance.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\TestItem\RestartAgingPage.cpp">
+      <Filter>Ui\TestItem</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_RestartAgingPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_UIControlImage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="App\Main.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\TaskScheduler\LTaskScheduler.cpp">
+      <Filter>Src\TaskScheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="App\AppParam.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SystemMetrics\LSystemMetrics.cpp">
+      <Filter>Src\SystemMetrics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Win8API\Win8API.cpp">
+      <Filter>Src\Win8API</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_GPUStressPage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\TestItem\GPUStressPage.cpp">
+      <Filter>Ui\TestItem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Ui\HardwareInforPage.h">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TempManagementPage.h">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItemPage.h">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TempManagement.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\HardwareInfor.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\MainPage.h">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\DiskSpeed.ui">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\DiskSpeedPage.h">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\CameraView.ui">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\CameraViewPage.h">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\Main.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Update\FtpDownload.h">
+      <Filter>Update</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Update\NewVersionUpdate.h">
+      <Filter>Update</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\RestartAging.ui">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\RestartAgingPage.h">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ResourceFiles\UIControlImage.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\GPUStress.ui">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Ui\TestItem\GPUStressPage.h">
+      <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_HardwareInfor.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Wmi\LWMICoreManager.h">
+      <Filter>Src\Wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Wmi\LWMISystemClasses.h">
+      <Filter>Src\Wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Wmi\LWMIHardwareClasses.h">
+      <Filter>Src\Wmi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\SetupApi\LSetupAPI.h">
+      <Filter>Src\SetupApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\WifiNetwork\LWifiNetwork.h">
+      <Filter>Src\WifiNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\DiskController\LDiskController.h">
+      <Filter>Src\DiskController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\SMARTPaser\LSMARTPaser.h">
+      <Filter>Src\SMARTParser</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_TempManagement.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\TemperatureProbe.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\PerformanceCounter.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Log\LLog.h">
+      <Filter>Src\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Memory\LMemory.h">
+      <Filter>Src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_TestItem.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DiskSpeed.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\LDiskSpeed.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\LSensorObject.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\LHardwareInfor.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\LCpuStress.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\SMBiosPaser\LSMBiosPaser.h">
+      <Filter>Src\SMBiosParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Webcam\LWebcam.h">
+      <Filter>Src\Webcam</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CameraView.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_Main.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Pdh\LPdh.h">
+      <Filter>Src\Pdh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\LAppInstance.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_RestartAging.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\TaskScheduler\LTaskScheduler.h">
+      <Filter>Src\TaskScheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="App\AppParam.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\SystemMetrics\LSystemMetrics.h">
+      <Filter>Src\SystemMetrics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Win8API\Win8API.h">
+      <Filter>Src\Win8API</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_GPUStress.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ui\ControlImage\DropDown.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ui\ControlImage\Close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ui\ControlImage\Close-on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ui\ControlImage\Min.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ui\ControlImage\Min-on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ResourceFiles\ControlImage\DropDown.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ResourceFiles\ControlImage\Close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ResourceFiles\ControlImage\Close-on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ResourceFiles\ControlImage\Min.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ResourceFiles\ControlImage\Min-on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ResourceFiles\ControlImage\Main.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ResourceFiles\BLHWScaner.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

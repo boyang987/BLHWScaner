@@ -1,0 +1,88 @@
+
+QLabel#labelTestState
+{
+    color: rgb(255, 0, 0);
+}
+
+
+QPushButton#pushButtonTest
+{
+	border-style: none;
+    background-color: rgb(167, 205, 255)
+}
+QPushButton#pushButtonTest:hover
+{
+    background-color: rgb(115, 176, 255)
+}
+
+QPushButton#pushButtonUpdate
+{
+	border-style: none;
+    color: black;
+    background-color: rgb(167, 205, 255)
+}
+QPushButton#pushButtonUpdate:hover
+{
+    background-color: rgb(115, 176, 255)
+}
+
+QComboBox#comboBoxSeqSize
+{
+    border: 1px solid gray;
+}
+
+QComboBox#comboBoxSeqSize::drop-down
+{       
+    border-image: url(:/ControlImage/DropDown.png);
+}
+
+QComboBox#comboBoxSeqSize QAbstractItemView
+{
+    border: 1px solid gray;
+    outline: 0px;
+}
+
+QComboBox#comboBoxRandSize
+{
+    border: 1px solid gray;
+}
+
+QComboBox#comboBoxRandSize::drop-down
+{       
+    border-image: url(:/ControlImage/DropDown.png);
+}
+
+QComboBox#comboBoxRandSize QAbstractItemView
+{
+    border: 1px solid gray;
+    outline: 0px;
+}
+
+QComboBox#comboBoxDiskList
+{
+    border: 1px solid gray;
+}
+
+QComboBox#comboBoxDiskList::drop-down
+{       
+    border-image: url(:/ControlImage/DropDown.png);
+}
+
+
+QComboBox#comboBoxDiskList QAbstractItemView
+{
+    border: 1px solid gray;
+    outline: 0px;
+}
+
+QComboBox QAbstractItemView::item
+{
+    color: black;
+    min-height: 25px; 
+}
+
+QComboBox QAbstractItemView::item::selected
+{
+    color: white;
+    background-color: rgb(167, 205, 255);  
+}

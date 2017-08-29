@@ -1,0 +1,36 @@
+
+
+QLabel#labelCountDown
+{
+    color: rgb(255, 0, 0);
+}
+
+QLabel#labelCompletedTimes
+{
+    color: rgb(0, 0, 255);
+}
+
+QLabel#labelBSODTimes
+{
+    color: rgb(0, 0, 255);
+}
+
+QPushButton#pushButtonTest
+{
+	border-style: none;
+    background-color: rgb(167, 205, 255)
+}
+QPushButton#pushButtonTest:hover
+{
+    background-color: rgb(115, 176, 255)
+}
+
+QPushButton#pushButtonReset
+{
+	border-style: none;
+    background-color: rgb(167, 205, 255)
+}
+QPushButton#pushButtonReset:hover
+{
+    background-color: rgb(115, 176, 255)
+}

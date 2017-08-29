@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ControlImage/DropDown.png</file>
+        <file>ControlImage/Close.png</file>
+        <file>ControlImage/Close-on.png</file>
+        <file>ControlImage/Min.png</file>
+        <file>ControlImage/Min-on.png</file>
+        <file>ControlImage/Main.png</file>
+    </qresource>
+</RCC>

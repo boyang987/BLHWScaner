@@ -1,0 +1,71 @@
+
+QWidget#TempManagementForm
+{
+    background-color: rgb(255, 255, 255);
+}
+
+QProgressBar#progressBarCpuUsage 
+{
+     border: 1px solid grey;
+}
+QProgressBar#progressBarCpuUsage::chunk 
+{
+     background-color: rgb(100, 160, 255);
+}
+
+QProgressBar#progressBarMemUsage 
+{
+     border: 1px solid grey;
+}
+ 
+QProgressBar#progressBarMemUsage::chunk 
+{
+     background-color: rgb(100, 160, 255);
+}
+
+QProgressBar#progressBarDiskUsage 
+{
+     border: 1px solid grey;
+}
+ 
+QProgressBar#progressBarDiskUsage::chunk 
+{
+     background-color: rgb(100, 160, 255);
+}
+
+QProgressBar#progressBarCpuTemp
+{
+     border: 1px solid grey;
+}
+QProgressBar#progressBarCpuTemp::chunk 
+{
+     background-color: rgb(100, 160, 255);
+}
+
+QProgressBar#progressBarGpuTemp
+{
+     border: 1px solid grey;
+}
+QProgressBar#progressBarGpuTemp::chunk 
+{
+     background-color: rgb(100, 160, 255);
+}
+
+QProgressBar#progressBarDiskTemp
+{
+     border: 1px solid grey;
+}
+QProgressBar#progressBarDiskTemp::chunk 
+{
+     background-color: rgb(100, 160, 255);
+}
+
+QPushButton#pushButtonCpuAction
+{
+	border-style: none;
+    background-color: rgb(167, 205, 255)
+}
+QPushButton#pushButtonCpuAction:hover
+{
+    background-color: rgb(115, 176, 255)
+}

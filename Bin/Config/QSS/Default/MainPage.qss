@@ -1,0 +1,80 @@
+
+QMainWindow#MainForm
+{
+    background-color: rgb(115, 176, 255);
+}
+
+QToolButton#toolButtonHardware
+{
+	border-style: none;
+}
+
+QToolButton#toolButtonHardware:hover
+{
+    background-color: rgb(167, 205, 255)
+}
+
+QToolButton#toolButtonTempManagement
+{
+	border-style: none;
+}
+QToolButton#toolButtonTempManagement:hover
+{
+    background-color: rgb(167, 205, 255)
+}
+
+QToolButton#toolButtonTestItem
+{
+	border-style: none;
+}
+QToolButton#toolButtonTestItem:hover
+{
+    background-color: rgb(167, 205, 255)
+}
+
+QStackedWidget#stackedWidget
+{
+    background-color: rgb(255, 255, 255);
+}
+
+QPushButton#pushButtonMin
+{
+    border-image: url(:/ControlImage/Min.png);
+}
+
+QPushButton#pushButtonMin:hover
+{
+    border-image: url(:/ControlImage/Min-on.png);
+}
+
+QPushButton#pushButtonClose
+{
+    border-image: url(:/ControlImage/Close.png);
+}
+
+QPushButton#pushButtonClose:hover
+{
+    border-image: url(:/ControlImage/Close-on.png);
+}
+
+QPushButton#pushButtonUpdate
+{
+    border-style: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 176, 255);
+}
+
+QPushButton#pushButtonUpdate:hover
+{
+    background-color: rgb(167, 205, 255);
+}
+
+QLabel#labelUpdate
+{
+    color: rgb(255, 0, 0);
+}
+
+QLabel#labelIcon
+{
+    border-image: url(:/ControlImage/Main.png);
+}
