@@ -104,25 +104,3 @@ void GetExeParam(OUT ExeParam& exeParam)
     GetPrivateProfileStringW(exeParam.DeviceIdx.c_str(), DEVICE_PATH_KEY, L"", buffer, 256, EXEPARAM_INI_FILE);
     exeParam.DevicePath = buffer;
 }
-
-/*
-else
-{
-// 命令行为其他时, 尝试在配置文件中查询指定节点,
-// 如果找不到, 则退出
-wstring cmdLineW;
-StringToWString(cmdLine, cmdLineW);
-wchar_t devPath[256] = { 0 };
-DWORD num = GetPrivateProfileStringW(
-cmdLineW.c_str(),
-L"DevicePath",
-L"",
-devPath,
-256,
-DEVICE_INI_FILE);
-if (0 == num)
-return 0;
-
-SetDefaultAccelerator(devPath);
-}
-*/

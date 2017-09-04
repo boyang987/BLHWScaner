@@ -7,11 +7,8 @@ using std::string;
 
 #include <Windows.h>
 
-//#include "LMacroDefine.h"
 
 /// @brief 应用程序参数类
-///
-/// 
 class LApParam
 {
 public:
@@ -47,8 +44,6 @@ private:
 };
 
 /// @brief 自定义窗口基类
-/// 
-/// 
 class LWindow
 {
 public:
