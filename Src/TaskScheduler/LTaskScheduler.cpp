@@ -302,8 +302,8 @@ SAFE_EXIT:
         return bRet;
     }
 
-    /// @brief 设置设置项
-    bool Settings(IN bool bStartOnBattery)
+    /// @brief 设置是否可在DC模式下启动
+    bool SetStartOnBattery(IN bool bStartOnBattery)
     {
         if (NULL == m_pTaskDef)
             return false;
@@ -318,6 +318,41 @@ SAFE_EXIT:
         }
 
         hr = pSettings->put_DisallowStartIfOnBatteries(VARIANT_BOOL(!bStartOnBattery));
+        if(FAILED(hr))
+        {
+            bRet = false;
+            goto SAFE_EXIT;
+        }
+
+
+        bRet = true;
+
+SAFE_EXIT:
+        if (NULL != pSettings)
+        {
+            pSettings->Release();
+            pSettings = NULL;
+        }
+
+        return bRet;
+    }
+
+    /// @brief 设置是否唤醒计算器去执行任务
+    bool SetWakeToRun(IN bool bWakeToRun)
+    {
+        if (NULL == m_pTaskDef)
+            return false;
+
+        bool bRet = true;
+        ITaskSettings* pSettings = NULL;
+        HRESULT hr = m_pTaskDef->get_Settings(&pSettings);
+        if(FAILED(hr))
+        {
+            bRet = false;
+            goto SAFE_EXIT;
+        }
+
+        hr = pSettings->put_WakeToRun(VARIANT_BOOL(bWakeToRun));
         if(FAILED(hr))
         {
             bRet = false;
@@ -537,12 +572,20 @@ bool LTaskScheduler::Trigger(IN unsigned int trigger)
     return m_pTaskScheduler->Trigger(trigger);
 }
 
-bool LTaskScheduler::Settings(IN bool bStartOnBattery)
+bool LTaskScheduler::SetStartOnBattery(IN bool bStartOnBattery)
 {
     if (NULL == m_pTaskScheduler)
         return false;
 
-    return m_pTaskScheduler->Settings(bStartOnBattery);
+    return m_pTaskScheduler->SetStartOnBattery(bStartOnBattery);
+}
+
+bool LTaskScheduler::SetWakeToRun(IN bool bWakeToRun)
+{
+    if (NULL == m_pTaskScheduler)
+        return false;
+
+    return m_pTaskScheduler->SetWakeToRun(bWakeToRun);
 }
 
 bool LTaskScheduler::Action(IN const wchar_t* pExePath, IN const wchar_t* pParam, IN const wchar_t* pWorkingDir)

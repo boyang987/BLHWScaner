@@ -53,11 +53,17 @@ public:
     /// @return 成功返回true, 失败返回false
     bool Trigger(IN unsigned int trigger);
 
-    /// @brief 设置设置项
+    /// @brief 设置是否可在DC模式下启动
     /// 该方法为可选项
     /// @param[in] bStartOnBattery 标志是否可以在DC模式下启动, 默认值为不可以
     /// @return 成功返回true, 失败返回false
-    bool Settings(IN bool bStartOnBattery);
+    bool SetStartOnBattery(IN bool bStartOnBattery);
+
+    /// @brief 设置是否唤醒计算器去执行任务
+    /// 该方法为可选项
+    /// @param[in] bWakeToRun 标志是否唤醒计算器去执行任务, 默认值为不唤醒
+    /// @return 成功返回true, 失败返回false
+    bool SetWakeToRun(IN bool bWakeToRun);
 
     /// @brief 设置任务计划动作
     /// 该方法为必须设置项
