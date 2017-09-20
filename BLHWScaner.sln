@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BLHWScaner", "BLHardwareSca
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreTempTester", "CoreTempTester\CoreTempTester.vcxproj", "{2F857B54-5A5E-40D3-933F-C5948FB09977}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MonitorControl", "MonitorControl\MonitorControl.vcxproj", "{302A6AF1-FA8C-4258-92E8-7CC5042FD2AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,10 @@ Global
 		{2F857B54-5A5E-40D3-933F-C5948FB09977}.Debug|Win32.Build.0 = Debug|Win32
 		{2F857B54-5A5E-40D3-933F-C5948FB09977}.Release|Win32.ActiveCfg = Release|Win32
 		{2F857B54-5A5E-40D3-933F-C5948FB09977}.Release|Win32.Build.0 = Release|Win32
+		{302A6AF1-FA8C-4258-92E8-7CC5042FD2AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{302A6AF1-FA8C-4258-92E8-7CC5042FD2AF}.Debug|Win32.Build.0 = Debug|Win32
+		{302A6AF1-FA8C-4258-92E8-7CC5042FD2AF}.Release|Win32.ActiveCfg = Release|Win32
+		{302A6AF1-FA8C-4258-92E8-7CC5042FD2AF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
