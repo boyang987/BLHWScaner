@@ -49,9 +49,11 @@ public:
 
     /// @brief 设置触发条件
     /// 该方法为必须设置项
-    /// @param[in] trigger, 1(启动时触发), 2(登录时触发), 没有默认值
+    /// @param[in] trigger, 1(启动时触发), 2(登录时触发), 3(指定时间触发), 没有默认值
+    /// @param[in] pTime, trigger设置为1或2时不需要设置该值, trigger设置为3时需要设置该值
+    /// 时间格式为: 2017-09-21T11:17:20, T为日期和时间的分隔符
     /// @return 成功返回true, 失败返回false
-    bool Trigger(IN unsigned int trigger);
+    bool Trigger(IN unsigned int trigger,const wchar_t* pTime);
 
     /// @brief 设置是否可在DC模式下启动
     /// 该方法为可选项

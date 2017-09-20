@@ -251,11 +251,12 @@ SAFE_EXIT:
     }
 
     /// @brief 设置触发条件
-    /// @param[in] trigger, 1(启动时触发), 2(登录时触发)
-    /// @return 成功返回true, 失败返回false
-    bool Trigger(IN unsigned int trigger)
+    bool Trigger(IN unsigned int trigger,const wchar_t* pTime)
     {
-        if (trigger != 1 && trigger != 2)
+        if (trigger != 1 && trigger != 2 && trigger != 3)
+            return false;
+
+        if (trigger == 3 && pTime == NULL)
             return false;
 
         if (NULL == m_pTaskDef)
@@ -278,6 +279,11 @@ SAFE_EXIT:
             hr = pTriggerCollection->Create(TASK_TRIGGER_BOOT, &pTrigger); // 系统启动时触发
         else if (2 == trigger)
             hr = pTriggerCollection->Create(TASK_TRIGGER_LOGON, &pTrigger); // 当用户登录时触发
+        else if (3 == trigger)
+        {
+            hr = pTriggerCollection->Create(TASK_TRIGGER_TIME, &pTrigger);
+            hr = pTrigger->put_StartBoundary(_bstr_t(pTime));
+        }
 
         if(FAILED(hr))
         {
@@ -564,12 +570,12 @@ bool LTaskScheduler::Principal(IN bool bHighestLevel)
     return m_pTaskScheduler->Principal(bHighestLevel);
 }
 
-bool LTaskScheduler::Trigger(IN unsigned int trigger)
+bool LTaskScheduler::Trigger(IN unsigned int trigger,const wchar_t* pTime)
 {
     if (NULL == m_pTaskScheduler)
         return false;
 
-    return m_pTaskScheduler->Trigger(trigger);
+    return m_pTaskScheduler->Trigger(trigger, pTime);
 }
 
 bool LTaskScheduler::SetStartOnBattery(IN bool bStartOnBattery)
