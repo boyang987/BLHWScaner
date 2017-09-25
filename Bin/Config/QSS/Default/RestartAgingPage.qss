@@ -15,6 +15,11 @@ QLabel#labelBSODTimes
     color: rgb(0, 0, 255);
 }
 
+QLabel#labelDeviceLose
+{
+    color: rgb(0, 0, 255);
+}
+
 QPushButton#pushButtonTest
 {
 	border-style: none;

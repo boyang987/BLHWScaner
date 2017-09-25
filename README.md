@@ -19,6 +19,11 @@ GPU测试： <br>
 ![](https://github.com/BurnellLiu/BLHWScaner/blob/master/ReadMeImg/gputest.PNG) <br>
 
 # Release Note: <br>
+
+**2017/07/18 V1.4.8 Release** <br>
+1. 增加功能: RestartAging测试可以切换为S3或S4测试 <br>
+2. 增加功能: RestartAging中增加丢失设备检查 <br>
+
 **2017/07/18 V1.4.8 Release** <br>
 1. 增加功能: GPU压力测试 <br>
 
