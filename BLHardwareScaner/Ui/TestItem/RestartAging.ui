@@ -23,7 +23,10 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,10,1">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2">
+      <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,1,1,1,1">
+       <property name="spacing">
+        <number>10</number>
+       </property>
        <item>
         <widget class="QPushButton" name="pushButtonReset">
          <property name="sizePolicy">
@@ -43,7 +46,7 @@
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer">
+        <spacer name="horizontalSpacer_2">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -54,6 +57,60 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxRestart">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Restart</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxS3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>S3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxS4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>S4</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -79,7 +136,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">
@@ -98,7 +155,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="inputMethodHints">
@@ -120,7 +177,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">
@@ -139,7 +196,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">
@@ -169,7 +226,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">
@@ -188,7 +245,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="inputMethodHints">
@@ -210,7 +267,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">
@@ -229,7 +286,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">
@@ -250,15 +307,25 @@
         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,1,2,1">
          <item>
           <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
            <property name="text">
-            <string/>
+            <string>Device Lose:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_10">
+          <widget class="QLabel" name="labelDeviceLose">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
            <property name="text">
-            <string/>
+            <string>0</string>
            </property>
           </widget>
          </item>
@@ -273,7 +340,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">
@@ -292,7 +359,7 @@
            <property name="font">
             <font>
              <family>Microsoft YaHei UI</family>
-             <pointsize>14</pointsize>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="text">

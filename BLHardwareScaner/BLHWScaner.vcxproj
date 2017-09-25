@@ -94,6 +94,7 @@
     <ClCompile Include="..\Src\Memory\LMemory.cpp" />
     <ClCompile Include="..\Src\Pdh\LPdh.cpp" />
     <ClCompile Include="..\Src\PerformanceCounter.cpp" />
+    <ClCompile Include="..\Src\PowerMgmt\PowerMgmt.cpp" />
     <ClCompile Include="..\Src\SetupApi\LSetupAPI.cpp" />
     <ClCompile Include="..\Src\SMARTPaser\LSMARTParser.cpp" />
     <ClCompile Include="..\Src\SMBiosPaser\LSMBiosPaser.cpp" />
@@ -108,12 +109,14 @@
     <ClCompile Include="..\Src\Wmi\LWMISystemClasses.cpp" />
     <ClCompile Include="App\AppParam.cpp" />
     <ClCompile Include="App\Main.cpp" />
+    <ClCompile Include="App\MsgApplication.cpp" />
     <ClCompile Include="GeneratedFiles\moc_CameraViewPage.cpp" />
     <ClCompile Include="GeneratedFiles\moc_DiskSpeedPage.cpp" />
     <ClCompile Include="GeneratedFiles\moc_FtpDownload.cpp" />
     <ClCompile Include="GeneratedFiles\moc_GPUStressPage.cpp" />
     <ClCompile Include="GeneratedFiles\moc_HardwareInforPage.cpp" />
     <ClCompile Include="GeneratedFiles\moc_MainPage.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_MsgApplication.cpp" />
     <ClCompile Include="GeneratedFiles\moc_RestartAgingPage.cpp" />
     <ClCompile Include="GeneratedFiles\moc_TempManagementPage.cpp" />
     <ClCompile Include="GeneratedFiles\moc_TestItemPage.cpp" />
@@ -157,6 +160,7 @@
     <ClInclude Include="..\Src\Memory\LMemory.h" />
     <ClInclude Include="..\Src\Pdh\LPdh.h" />
     <ClInclude Include="..\Src\PerformanceCounter.h" />
+    <ClInclude Include="..\Src\PowerMgmt\PowerMgmt.h" />
     <ClInclude Include="..\Src\SetupApi\LSetupAPI.h" />
     <ClInclude Include="..\Src\SMARTPaser\LSMARTPaser.h" />
     <ClInclude Include="..\Src\SMBiosPaser\LSMBiosPaser.h" />
@@ -170,6 +174,16 @@
     <ClInclude Include="..\Src\Wmi\LWMIHardwareClasses.h" />
     <ClInclude Include="..\Src\Wmi\LWMISystemClasses.h" />
     <ClInclude Include="App\AppParam.h" />
+    <CustomBuild Include="App\MsgApplication.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MsgApplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL -DQT_NETWORK_LIB -D_MBCS "-I." "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I." "-I." "-I." "-I."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MsgApplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL -DQT_NETWORK_LIB -D_MBCS "-I." "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I." "-I." "-I." "-I."</Command>
+    </CustomBuild>
     <ClInclude Include="GeneratedFiles\ui_CameraView.h" />
     <ClInclude Include="GeneratedFiles\ui_DiskSpeed.h" />
     <ClInclude Include="GeneratedFiles\ui_GPUStress.h" />

@@ -6,6 +6,7 @@
 
 #include "Ui\\MainPage.h"
 #include "App\\AppParam.h"
+#include "App\\MsgApplication.h"
 #include "..\\Src\\Log\\LLog.h"
 #include "..\\Src\\LAppInstance.h"
 
@@ -14,6 +15,7 @@
 
 // 应用程序实例名称
 #define APP_INSTANCE_NAME L"Global\\BLHWScaner{EB83918F-DAFD-47E6-A363-9B874F2CF2AF}"
+
 
 /// @brief 检查路径, 路径不存在则创建
 /// @param[in] qstrPath 路径
@@ -57,7 +59,7 @@ int main(int argc, char *argv[])
     if (appInstance.IsAlreadyExist())
         return 0;
 
-    QApplication app(argc, argv);
+    MsgApplication app(argc, argv);
 
     // 不管程序以什么样的方式运行, 都设置程序的工作路径为程序本身所在的路径
     QString appPath = app.applicationDirPath();

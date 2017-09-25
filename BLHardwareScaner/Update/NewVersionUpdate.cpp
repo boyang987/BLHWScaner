@@ -1,4 +1,4 @@
-
+ï»¿
 #include "NewVersionUpdate.h"
 
 #include <QtCore/QDir>
@@ -15,9 +15,9 @@
 #define UPDATE_PATH ".\\Temp\\Update\\"
 #define CHECK_NEW_FILE_PATH ".\\Temp\\Update\\Version"
 
-/// @brief ¼ì²éÂ·¾¶, Â·¾¶²»´æÔÚÔò´´½¨
-/// @param[in] qstrPath Â·¾¶
-/// @return ³É¹¦·µ»Øtrue, Ê§°Ü·µ»Øfalse
+/// @brief æ£€æŸ¥è·¯å¾„, è·¯å¾„ä¸å­˜åœ¨åˆ™åˆ›å»º
+/// @param[in] qstrPath è·¯å¾„
+/// @return æˆåŠŸè¿”å›žtrue, å¤±è´¥è¿”å›žfalse
 static bool CheckPath(IN const QString& qstrPath)
 {
     QDir logDir;
@@ -54,7 +54,7 @@ void CheckNew::StartCheckAsync()
 {
     CheckPath(UPDATE_PATH);
 
-    // ¿ªÊ¼ÏÂÔØ°æ±¾ÎÄ¼þ
+    // å¼€å§‹ä¸‹è½½ç‰ˆæœ¬æ–‡ä»¶
     m_pFtpDownload->StartDownloadAsync();
 }
 
@@ -119,7 +119,7 @@ void DownloadNew::StartDownloadAsync()
 {
     CheckPath(UPDATE_PATH);
 
-    // ¿ªÊ¼ÏÂÔØ°æ±¾ÎÄ¼þ
+    // å¼€å§‹ä¸‹è½½ç‰ˆæœ¬æ–‡ä»¶
     m_pFtpDownload->StartDownloadAsync();
 }
 

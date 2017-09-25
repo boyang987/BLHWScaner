@@ -66,6 +66,9 @@
     <Filter Include="Src\Win8API">
       <UniqueIdentifier>{1b6cf6ab-73cb-4a42-886e-6bcf745bcdac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\PowerMgmt">
+      <UniqueIdentifier>{7d81841e-6d93-499e-95d6-7831150ff889}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeneratedFiles\moc_HardwareInforPage.cpp">
@@ -200,6 +203,15 @@
     <ClCompile Include="Ui\TestItem\GPUStressPage.cpp">
       <Filter>Ui\TestItem</Filter>
     </ClCompile>
+    <ClCompile Include="App\MsgApplication.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_MsgApplication.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\PowerMgmt\PowerMgmt.cpp">
+      <Filter>Src\PowerMgmt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Ui\HardwareInforPage.h">
@@ -258,6 +270,9 @@
     </CustomBuild>
     <CustomBuild Include="Ui\TestItem\GPUStressPage.h">
       <Filter>Ui\TestItem</Filter>
+    </CustomBuild>
+    <CustomBuild Include="App\MsgApplication.h">
+      <Filter>App</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -356,6 +371,9 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_GPUStress.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\PowerMgmt\PowerMgmt.h">
+      <Filter>Src\PowerMgmt</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
